@@ -49,7 +49,7 @@ def main():
                 print(f"Sending recieved data {send_full_data} to google") 
                 proxy_end.sendall(send_full_data) 
                  
-                #remember to shut down!! 
+                #shut down 
                 proxy_end.shutdown(socket.SHUT_WR) 
 
                 data = proxy_end.recv(BUFFER_SIZE)
