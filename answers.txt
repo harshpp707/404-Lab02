@@ -1,0 +1,11 @@
+1. In python we specify a TCP socket wherever you create or connect socket connection, you define it in function itself. The argument would be socket.SOCK_STREAM.
+
+2. A client is the one who creates connection and server is the one who responds to the requests by client.
+
+3. We can use this in python command to reuse same bind port: socket.socket(socket.AF_INET, socket.SOCK_STREAM).setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+4. We get the IP address of client and port of request about the incoming connections.
+
+5. The recv() method from a server socket will return the data sent by the client as part of an HTTP request. Where the data will be a byte object form.
+
+6. https://github.com/harshpp707/404-Lab02
