@@ -25,7 +25,7 @@ def main():
             p.daemon = True
             p.start()
             print("Started process ", p)
-
+        s.close()
                 
 def handle_AnotherProcess(addr, conn):
     print("Connect by", addr)
